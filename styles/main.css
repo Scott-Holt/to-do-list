@@ -1,0 +1,129 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:sans-serif;
+  color:#626292
+}
+
+.wrapper{
+  box-shadow:1px 1px 10px grey;
+  width:600px;
+  background-color: #d8ebf7;
+}
+
+.header{
+  background-color:#FFFACD;
+  border: 20px solid rgb(102, 153, 255);
+  padding:30px;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  box-shadow: 1px 1px 10px;
+  box-shadow: inset 1px 1px 6px 0px black;
+}
+
+
+
+h1,
+p {
+  color:#626292;
+}
+
+main {
+/*   border:3px solid red; */
+
+}
+
+.name-of-list-div{
+  padding:30px;
+  line-height: 35px;
+  /* border-bottom:2px solid #7751771f; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+h2 {
+  color:#626292;
+}
+
+.list-div{
+  /* margin-top: 20px; */
+  /* padding: 30px; */
+  padding-left: 30px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 4px;
+  font-size: 1.0em;
+}
+
+button {
+  background-color:rgb(102, 153, 255);
+  border-radius:6px;
+  width:100px;
+  box-shadow:1px 1px 1px lightgray;
+  color:white;
+}
+
+.add-button{
+  margin-left:4px;
+}
+
+.list-name {
+    font-size: .92em;
+    margin-top: 8px;
+    padding: 6px;
+}
+
+.name-of-list-input{
+  display:none;
+}
+
+/*
+input[placeholder]{
+  color:lightgray;
+}
+*/
+
+/*
+input {
+  color:red;
+}
+*/
+
+
+ol {
+  margin-bottom:14px;
+  line-height:25px;
+}
+
+ol li{/*   list-style:none; */border-bottom:1px solid #62629238;margin-right:30px;padding-top:10px;position: relative;}
+
+/*added class with JS event listener*/
+
+.button-change{
+  background-color:#FEA6A6;
+}
+
+.remove-button {
+  background-color:#dc6868;
+  /* margin-left:400px; */
+  width:70px;
+  /* margin-bottom: 21px; */
+  position: absolute;
+  right: -1px;
+  bottom: 3px;
+  font-size: .8em;
+}
