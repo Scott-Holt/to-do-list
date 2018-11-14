@@ -9,14 +9,16 @@ body{
   justify-content:center;
   align-items:center;
   height:100vh;
-  font-family:sans-serif;
-  color:#626292
+  font-family: sans-serif;
+  color:#626292;
+  letter-spacing:1px;
 }
 
 .wrapper{
   box-shadow:1px 1px 10px grey;
   width:600px;
   background-color: #d8ebf7;
+  border-radius:10px;
 }
 
 .header{
@@ -29,14 +31,25 @@ body{
   align-items:center;
   box-shadow: 1px 1px 10px;
   box-shadow: inset 1px 1px 6px 0px black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-
-
 
 h1,
-p {
+h2{
+  font-family: 'Dancing Script', cursive;
   color:#626292;
 }
+
+h2{
+  font-size:1.8em;
+}
+
+
+/* p {
+  color: #74bbb9;
+  text-shadow: -1px 1px 0px #909090;
+} */
 
 main {
 /*   border:3px solid red; */
@@ -50,11 +63,10 @@ main {
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
+  margin-bottom: -30px;
 }
 
-h2 {
-  color:#626292;
-}
+
 
 .list-div{
   /* margin-top: 20px; */
@@ -70,11 +82,23 @@ input, button {
 }
 
 button {
-  background-color:rgb(102, 153, 255);
-  border-radius:6px;
-  width:100px;
-  box-shadow:1px 1px 1px lightgray;
-  color:white;
+    background-color: rgb(102, 153, 255);
+    border-radius: 6px;
+    width: 100px;
+    box-shadow: 1px 1px 1px lightgrey;
+    color: white;
+    cursor: pointer;
+    opacity: .6;
+    transition: ease .1s;
+    text-shadow: -1px 0px 2px black;
+}
+
+button:hover{
+  opacity:1;
+}
+
+button:focus {
+  opacity:1;
 }
 
 .add-button{
@@ -117,13 +141,26 @@ ol li{/*   list-style:none; */border-bottom:1px solid #62629238;margin-right:30p
   background-color:#FEA6A6;
 }
 
+.remove-button,
+.up-button,
+.down-button {
+    width:70px;
+    font-size: .8em;
+    position:absolute;
+    bottom:3px;
+}
+
 .remove-button {
   background-color:#dc6868;
-  /* margin-left:400px; */
-  width:70px;
-  /* margin-bottom: 21px; */
-  position: absolute;
   right: -1px;
-  bottom: 3px;
-  font-size: .8em;
+}
+
+.up-button{
+  background-color:#45b78e94;
+  right: 140px;
+}
+
+.down-button{
+  background-color:#7b80c3;;
+  right: 69px;
 }
