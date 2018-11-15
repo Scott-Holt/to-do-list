@@ -39,18 +39,11 @@ function createListButtons (li) {
     }
 });
 
-//displays text field and changes button text for the change list title section
+//change title button lets you edit title
 changeListTitleButton.addEventListener('click', () => {
-  if (titleInput.style.display = 'none'){
-      titleInput.style.display = 'inline-block';
-      changeListTitleButton.textContent = 'Change';
-      changeListTitleButton.style.backgroundColor = '#dc6868';
-      listTitle.textContent = titleInput.value;
-      titleInput.value = '';
-
-    }
+   listTitle.contentEditable = true;
+   listTitle.classList.toggle('list-name-focus');
 });
-
 
 
 //listens for click on targeted element.
