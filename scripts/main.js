@@ -13,7 +13,9 @@ const titleInput = document.querySelector('.name-of-list-input');
 function createListButtons (li) {
   const removeButton = document.createElement('button');
   removeButton.classList.add('remove-button');
-  removeButton.innerHTML ='<i class="fa">&#xf014;</i>';
+  // removeButton.innerHTML ='<i class="fa">&#xf014;</i>';
+  removeButton.textContent = 'X';
+  // removeButton.textContent = '<i class="fa">&#xf014;</i>';
   li.appendChild(removeButton);
 
   const upButton = document.createElement('button');
